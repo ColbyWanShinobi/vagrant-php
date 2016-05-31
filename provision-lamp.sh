@@ -34,7 +34,7 @@ cat > /etc/apache2/mods-enabled/dir.conf <<DELIM
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 DELIM
 
-mkdir -p /shared/www
+#mkdir -p /shared/www
 #sed -i 's/\/var\/www\/html/\/shared\/www/' /etc/apache2/sites-enabled/000-default.conf
 #/var/www/html
 cat > /etc/apache2/sites-enabled/000-default.conf <<DELIM
@@ -74,14 +74,12 @@ cat > /etc/apache2/sites-enabled/000-default.conf <<DELIM
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 DELIM
 
-
-
-echo "Creating info.php"
-cat > /shared/www/info.php <<DELIM
-<?php
-phpinfo();
-?>
-DELIM
+#echo "Creating info.php"
+#cat > /shared/www/info.php <<DELIM
+#<?php
+#phpinfo();
+#?>
+#DELIM
 
 echo "Restarting Apache..."
 service apache2 restart
