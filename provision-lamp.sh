@@ -22,7 +22,7 @@ echo "Installing system dependencies..."
 #echo "mysql-server mysql-server/root_password_again password $DBPASSWDR" | debconf-set-selections
 #apt-get install -y mysql-server
 
-apt-get install -y apache2 libapache2-mod-auth-mysql php5-mysql php5 libapache2-mod-php5 php5-mcrypt
+apt-get install -y apache2 libapache2-mod-auth-mysql php5-mysql php5 libapache2-mod-php5 php5-mcrypt php-http-request2
 
 echo "Updating Apache config to recognize index.php, index.phtml..."
 
